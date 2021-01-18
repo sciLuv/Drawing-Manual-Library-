@@ -1,0 +1,239 @@
+@font-face{ font-family: 'whitney-book'; src: url('whitney-book.otf');}
+
+body{
+font-family: 'whitney-book'; background-color: #26282B; margin: 0px;
+display: flex; flex-direction: column; align-items: center;
+}
+
+#contenuPlusLogo{
+	display: flex; flex-direction: column; align-items: center;
+	height: auto;
+	padding: 10px 0px 25px 0px; box-shadow: 19px 0px 110px black; border-radius: 0px 0px 10px 10px;
+	background-color: #F5F5F5;
+}
+
+#logo{ max-width: 300px; min-width: 300px; padding-bottom: 15px;}
+#contenu{ display: flex; flex-direction: row; align-items: center; padding: 0px 20px 0px 20px;}
+
+#pdfDisplay {
+	position: absolute; display: none;
+	align-items: center; justify-content: center;
+	margin: -10px 0px 0px 0px;
+	width: 100%; height: 100%;
+}
+
+#pdfpagination1 {width: 52%; height: 100%; background-color: black; opacity: 0.7;}
+#pdfDisplayContentOfContent {width: 100%; height: 100%; display: flex; flex-direction: column;}
+#pdfDisplaybeforeContent {background-color: black; height: 100%; opacity: 0.7;}
+#pdfDisplayContent { width:100%; height:960px; min-height: 960px;}
+#pdfDisplayAfterContent {background-color: black; height: 100%; opacity: 0.7;}
+#pdfpagination2 {width: 52%; height: 100%; background-color: black; opacity: 0.7;}
+
+#libraryAndSearch{
+padding: 10px 5px 10px 5px; border-radius: 5px;
+width: 690px; height: 670px;
+background-color: #7289DA;
+}
+
+#searchMotor{
+	display: flex; align-items:  space-around;
+	width: 687px; height: 37px; margin: 0px 0px 2px 0px;
+	border: none; border-radius: 7px;
+	color: #ECECEC; background-color: #7289DA;
+}
+
+#buttonCategoriesSelection
+{ display: flex; align-items: center; border: none;
+	color: #adadad; background-color: #36393F;
+	 border-right: 0.5px inset #adadad; border-radius: 5px 2px 2px 5px;
+	height: 37px; width: 110px;}
+
+#buttonCategoriesSelection:hover{cursor: pointer; background-color: #46494f !important; transition-duration: 150ms;}
+#buttonCategoriesSelection:focus{outline: none;}
+#buttonCategoriesSelectionText {margin : 0px 6px 0px 8px; min-width: 65px;}
+
+#categoriesDisplayingOrganisation {position: absolute; display: none; height: 115px; }
+
+#categoriesDisplaying {	background: #46494f; color: #B5B5B5; cursor: pointer; }
+#categoriesDisplayingPagination {	display: flex; flex-direction: column;  width: 110px; align-items: center; }
+#categoriesDisplayingPagination div {display: flex; justify-content: center; padding: 4px 0px 4px 0px; font-size: large; width: 100%; }
+#categoriesDisplayingPagination p {margin: 0px;  user-select: none;}
+
+#keyWordSListing { display: none; flex-wrap: wrap; justify-content: center; width: 562px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+#keyWordCategory:hover {color : white !important;}
+#keyWordButtonContent {margin-top: 5px; border: none; height: 190px; overflow-y: scroll;}
+.keyWordButton {user-select: none; margin: 5px 0px 4px 9px; width: 125px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit;}
+.keyWordButton:hover { cursor: pointer; background-color: silver; transition-duration: 250ms;}
+.keyWordButton:focus{ background-color: #26282B; outline: none; transition-duration: 50ms;}
+
+#authorListing { display: none; flex-wrap: wrap; justify-content: center; width: 562px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+#authorCategory:hover {color : white !important;}
+#authorButtonContent {margin-top: 5px; border: none; height: 190px; overflow-y: scroll;}
+.authorButton {user-select: none; margin: 5px 0px 4px 9px; width: 125px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit;}
+.authorButton:hover { cursor: pointer; background-color: silver; transition-duration: 250ms;}
+.authorButton:focus{ background-color: #26282B; outline: none; transition-duration: 50ms;}
+
+#genreListing { display: none; flex-wrap: wrap; justify-content: center; width: 562px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+#genreCategory:hover {color : white !important;}
+#genreButtonContent {margin-top: 5px; border: none; height: 190px; overflow-y: scroll;}
+.genreButton {user-select: none; margin: 5px 0px 4px 9px; width: 125px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit;}
+.genreButton:hover { cursor: pointer; background-color: silver; transition-duration: 250ms;}
+.genreButton:focus{ background-color: #26282B; outline: none; transition-duration: 50ms;}
+
+#languageListing { display: none; flex-wrap: wrap; justify-content: center; width: 562px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+#languageCategory:hover {color : white !important;}
+#languageButtonContent {margin-top: 5px; border: none; height: 190px; overflow-y: scroll;}
+.languageButton {user-select: none; margin: 5px 0px 4px 9px; width: 125px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit;}
+.languageButton:hover { cursor: pointer; background-color: silver; transition-duration: 250ms;}
+.languageButton:focus{ background-color: #26282B; outline: none; transition-duration: 50ms;}
+
+#search{
+width: 550px; height: 35px;
+margin: 0px 0px 2px 0px; padding-left:10px; border-radius: 0px 7px 7px 0px; border: none;
+color: #ECECEC; background-color: #36393F;
+}
+
+#search:focus{outline: solid #959595 2px;}
+::placeholder{color: #9e9e9e;}
+
+/* pour changer la barre de défilement */
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #37393B; border-radius: 7px;}
+::-webkit-scrollbar-thumb:hover {}
+/*fin changement barre de defilement */
+
+#descriptionsCategories{
+display: flex; justify-content: flex-start;
+height: 30px; width: 715px;
+margin: 8px 0px 4px 0px;
+}
+
+#descriptionsCategories div { display: flex; align-items: center; height: inherit; user-select: none;}
+
+#descriptionsCategories button {
+ display: flex; align-items: center;
+ height: inherit; width: 125px;
+ background-color: #7289DA; color: white; border: none; outline: none;
+}
+#descriptionsCategories button:hover { opacity: 0.5; transition-property: opacity; transition-duration: 350ms; }
+
+
+#authorMenu{width: 223px;} #titleMenu{width: 210px;} #genreMenu{width: 130px; margin-left: 12px;} #languageMenu{width: 100px;}
+#authorClassement{cursor: pointer;} #titleClassement{cursor: pointer;} #genreClassement{cursor: pointer;} #languageClassement{cursor: pointer;}
+#descriptionsCategories p {font-family: 'whitney-book'; font-size: 15px;}
+
+#libraryHTML{
+	overflow-y: scroll;
+	overflow-x: hidden;
+  height: 597px;
+	margin-top: -3px;
+}
+
+#discord {padding: 5px 0px 0px 10px; align-self: flex-start;}
+
+/*a partir d'ici, css en lien avec le HTML crée par le Javascript pour la bibliotheque */
+
+.bookHTML{
+display: flex; justify-content: flex-start;
+width: 670px; height: 48px; font-size: 19px; background-color: #26282B; cursor: pointer;
+box-shadow: inset -2px 10px 18px black; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px; border-radius: 5px; overflow-y: hidden;
+}
+.bookHTML:hover { background-color: #43464B; box-shadow: inset -2px 10px 18px #222222; transition-property: opacity; transition-duration: 350ms; }
+.bookHTML:active { background-color: #676C73; box-shadow: inset -2px 10px 18px #AAAEB5; transition-property: opacity; }
+.bookHTML li { list-style-type:none; }
+
+.linkHTML { display: flex; justify-content: flex-start; color: #959595; text-decoration: none;}
+.linkHTML:hover {color: #ABABAB;}
+.linkHTML:hover:visited {color: #ABABAB;}
+.linkHTML:visited{ color: #959595; text-decoration: none; }
+.linkHTML:active{ color: #1E1F21;}
+.linkHTML:visited:active{ color: #1E1F21;}
+
+.genreHTML { width: 120px; padding-left: 3px; border-right: 1px #959595 solid; text-decoration: none;}
+.authorHTML { width: 140px; padding-left: 3px; border-right: 1px #959595 solid;}
+.titleHTML { width: 345px; padding-left: 3px;}
+.languageHTML { width: 50px; padding-left: 3px;  display: flex; justify-content: flex-end; align-items: center;}
+.languageImage { width: 22px; margin-right: 10px;}
+
+/* MEDIA QUERIES */
+
+@media screen and ( max-width: 1600px)
+{
+ #pdfpagination1 {width: 30%; height: 100%; background-color: black; opacity: 0.7;}
+ #pdfDisplayContentOfContent {width: 100%; height: 100%; display: flex; flex-direction: column;}
+ #pdfDisplayContent { width: 100%; height:100%; min-height: 960px;}
+ #pdfpagination2 {width: 30%; height: 100%; background-color: black; opacity: 0.7;}
+}
+
+
+@media screen and ( max-width: 1100px)
+{
+ #contenu { flex-direction: column;}
+ #discordFrame {width : 700px; height : 155px; margin-left: -10px; margin-top: 5px;}
+ #pdfpagination1 {width: 5%; height: 100%; background-color: black; opacity: 0.7;}
+ #pdfDisplayContentOfContent {width: 100%; height: 100%; display: flex; flex-direction: column;}
+ #pdfDisplaybeforeContent {background-color: black; height: 100%; opacity: 0.7;}
+ #pdfDisplayContent { width:100%; height:980px; min-height: 960px;}
+ #pdfDisplayAfterContent {background-color: black; height: 100%; opacity: 0.7;}
+ #pdfpagination2 {width: 5%; height: 100%; background-color: black; opacity: 0.7;}
+}
+
+@media screen and ( max-width: 720px)
+{
+	#libraryAndSearch{width: 490px;}
+	#authorMenu{width: 155px;} #titleMenu{width: 120px;} #genreMenu{width: 105px; margin-left: 6px;} #languageMenu{width: 100px;}
+	#searchMotor{ width: 480px;}
+	#discordFrame {width : 500px; height : 155px; margin-left: -10px; margin-top: 5px;}
+	.bookHTML{ font-size: 17px; width: 480px;}
+	.genreHTML { width: 105px; padding-left: 3px; border-right: 1px #959595 solid; text-decoration: none;}
+	.authorHTML { width: 100px; padding-left: 3px; border-right: 1px #959595 solid;}
+	.titleHTML { width: 200px; padding-left: 3px;}
+
+}
+
+@media screen and ( max-width: 510px)
+ {
+	body {overflow-x: hidden;}
+	#contenuPlusLogo{ padding: 5px 0px 25px 0px; box-shadow: none; border-radius: none;}
+	#logo { max-width: 190px; min-width: 190px; padding-bottom: 7px;}
+	#libraryAndSearch{width: 355px;}
+	#descriptionsCategories p {font-size: 11px;}
+	#authorMenu{width: 100px;} #titleMenu{width: 95px;} #genreMenu{width: 80px; margin-left: -1px;} #languageMenu{width: 80px;}
+	#searchMotor{ width: 345px; font-size: 12px;}
+	::placeholder { font-size: 11.5px;}
+
+	#buttonCategoriesSelection
+	{ display: flex; align-items: center; border: none; font-size: 12px;
+		color: #adadad; background-color: #36393F;
+		 border-right: 0.5px inset #adadad; border-radius: 5px 2px 2px 5px;
+		height: 37px; width: 90px;}
+
+	#buttonCategoriesSelection:hover{cursor: pointer; background-color: #46494f !important; transition-duration: 150ms;}
+	#buttonCategoriesSelection:focus{outline: none;}
+	#buttonCategoriesSelectionText {margin : 0px 2px 0px -1px; min-width: 65px;}
+
+	#categoriesDisplayingOrganisation {position: absolute; display: none; height: 100px; }
+
+	#categoriesDisplaying {	background: #46494f; color: #B5B5B5; cursor: pointer; }
+	#categoriesDisplayingPagination {	display: flex; flex-direction: column;  width: 90px; align-items: center; }
+	#categoriesDisplayingPagination div {display: flex; justify-content: center; padding: 4px 0px 4px 0px; font-size: 15px; width: 100%; }
+	#categoriesDisplayingPagination p {margin: 0px;  user-select: none;}
+
+	#keyWordSListing { display: none; flex-wrap: wrap; justify-content: center; width: 256px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+	.keyWordButton {user-select: none; margin: 5px 0px 4px 9px; width: 65px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit; font-size: 12px;}
+	#authorListing { display: none; flex-wrap: wrap; justify-content: center; width: 256px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+	.authorButton {user-select: none; margin: 5px 0px 4px 9px; width: 65px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit; font-size: 12px;}
+	#genreListing { display: none; flex-wrap: wrap; justify-content: center; width: 256px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+	.genreButton {user-select: none; margin: 5px 0px 4px 9px; width: 65px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit; font-size: 12px;}
+	#languageListing { display: none; flex-wrap: wrap; justify-content: center; width: 256px; background-color: gray; overflow-y: hidden; overflow-x: hidden; height: 202px; padding: 0px;}
+	.languageButton {user-select: none; margin: 5px 0px 4px 9px; width: 65px; height: 40px; border: none; background-color: gray; border-radius: 8px; color: inherit; font-size: 12px;}
+
+	#discordFrame {width : 365px; height : 155px; margin-left: -10px; margin-top: 5px;}
+	.bookHTML{ font-size: 14px; width: 345px;}
+	.genreHTML { width: 75px; padding-left: 3px; border-right: 1px #959595 solid; text-decoration: none;}
+	.authorHTML { width: 75px; padding-left: 3px; border-right: 1px #959595 solid;}
+	.titleHTML { width: 130px; padding-left: 3px;}
+	.languageImage { width: 18px; margin-right: 5px;}
+
+}

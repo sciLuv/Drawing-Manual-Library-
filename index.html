@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> MSF : la bibliotheque</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="style.css"> <script src="javascript.js" async></script>
+</head>
+<body id="body">
+<div id="contenuPlusLogo">
+  <img id="logo" src="image/logo.png">
+
+  <div id="contenu">
+          <div id="libraryAndSearch">
+
+              <div id="searchMotor">
+                <div id="categoriesSelection">
+                    <button id="buttonCategoriesSelection" type="button" name="button">
+                          <p id="buttonCategoriesSelectionText">Catégories </p>
+                          <img id="buttonCategoriesSelectionImage" src="image/openCat.png">
+                    </button>
+
+                    <div id="categoriesDisplayingOrganisation">
+                      <div id="categoriesDisplaying">
+                        <div id="categoriesDisplayingPagination">
+                          <div id="keyWordCategory"> <p>Mot clés</p> </div>
+                          <div id="languageCategory"> <p>Langue</p> </div>
+                          <div id="genreCategory"> <p>Theme</p> </div>
+                          <div id="authorCategory"> <p>Auteur</p> </div>
+
+                        </div>
+                      </div>
+                      <div id="categoriesContent">
+                        <div id="keyWordSListing"><div id="keyWordButtonContent"></div></div>
+                        <div id="languageListing"><div id="languageButtonContent"></div></div>
+                        <div id="genreListing"><div id="genreButtonContent"></div></div>
+                        <div id="authorListing"><div id="authorButtonContent"></div></div>
+
+
+                      </div>
+                    </div>
+
+                </div>
+
+                <input id="search" type="text" autocomplete="off" placeholder="Recherche par auteur, titre, theme, mots clés...">
+              </div>
+
+
+                    <div id="descriptionsCategories">
+                          <div id="genreMenu"><button id="genreClassement" type="button" name="button"><p>THEME-<span id="genreNumber">XX</span> <img id="AZGenre" src="image/A-Zempty.png"> </p></button></div>
+                          <div id="authorMenu"><button id="authorClassement" type="button" name="button"><p>AUTEUR-<span id="authorNumber">XX</span> <img id="AZAuthor" src="image/A-Zempty.png"> </p></button></div>
+                          <div id="titleMenu"><button id="titleClassement" type="button" name="button"><p>TITRE-<span id="titleNumber">XX</span> <img id="AZTitle" src="image/A-Zempty.png"> </p></button></div>
+                          <div id="languageMenu"><button id="languageClassement" type="button" name="button"><p>LANGUE-<span id="languageNumber">XX</span> <img id="AZLanguage" src="image/A-Zempty.png"> </p></button></div>
+                    </div>
+                    <div id="libraryHTML"></div>
+
+          </div>
+
+          <div id="discord">
+              <iframe id="discordFrame" src="https://discordapp.com/widget?id=343750331026636800&theme=orange" width="250" height="690" allowtransparency="true" frameborder="0"></iframe>
+          </div>
+
+  </div>
+  <div id=pdfDisplay>
+    <div id=pdfpagination1></div>
+    <div id=pdfDisplayContentOfContent>
+        <div id=pdfDisplaybeforeContent> </div>
+         <embed id=pdfDisplayContent src='' type='application/pdf'/>
+        <div id=pdfDisplayAfterContent> </div>
+    </div>
+    <div id=pdfpagination2></div>
+  </div>
+
+
+</body>
+</html>
